@@ -48,3 +48,17 @@ def mix1(name,sex,*changewords,age,city,**keywords):
 def mix2(name,sex,*changewords,**keywords):
     print(name,sex,changewords,keywords)
 
+#汉诺塔
+#此数学问题论证如下
+#以a为起点，c为终点，b为缓冲区
+#一个阶段的完结的循环为,a->b,a->c,b->c
+#此函数最终打印以三柱为原型移动n个堆叠块的路径和移动次数
+def tower(n,a,b,c):
+    if n == 1:
+        print(a+"->"+c)
+        return 1
+    else:
+        count1 = tower(n-1,a,c,b)
+        count2 = tower(1,a,b,c)
+        count3 = tower(n-1,b,a,c)
+        return count1+count2+count3

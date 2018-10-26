@@ -6,6 +6,7 @@ from ep2.ep2_1_function import changewords
 from ep2.ep2_1_function import keywords
 from ep2.ep2_1_function import mix1
 from ep2.ep2_1_function import mix2
+from ep2.ep2_1_function import tower
 
 #调用function
 print(eating('meat'))
@@ -20,3 +21,6 @@ keywords('FreyWan','male',age=25,city='Wuxi')
 changewords('FreyWan','male',age=25,city='Wuxi')
 mix1('FreyWan','male','whatever',age=25,city='Wuxi')
 mix2('FreyWan','male','whatever',age=25,city='Wuxi')
+
+
+print(tower(10,'A','B','C'))
